@@ -115,7 +115,7 @@ public class BaseImageDecoder implements ImageDecoder {
 	}
 
 	private boolean canDefineExifParams(String imageUri, String mimeType) {
-		return "image/jpeg".equalsIgnoreCase(mimeType) && (Scheme.ofUri(imageUri) == Scheme.FILE);
+		return true;//"image/jpeg".equalsIgnoreCase(mimeType) && (Scheme.ofUri(imageUri) == Scheme.FILE);
 	}
 
 	protected ExifInfo defineExifOrientation(String imageUri) {
